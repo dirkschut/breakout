@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccu3tbunw38cu"]
+
+[ext_resource type="PackedScene" uid="uid://jbjskjia2c58" path="res://Scenes/paddle.tscn" id="1_0hi3i"]
+[ext_resource type="PackedScene" uid="uid://bvq1l1lj4s1tn" path="res://Scenes/border_bouncy.tscn" id="2_7yuh0"]
+
+[node name="Game" type="Node"]
+
+[node name="Paddle" parent="." instance=ExtResource("1_0hi3i")]
+position = Vector2(0, -10)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_bottom = 0
+
+[node name="BorderBouncy" parent="." instance=ExtResource("2_7yuh0")]
+position = Vector2(-332, -360)
+scale = Vector2(1, 100)
+
+[node name="BorderBouncy2" parent="." instance=ExtResource("2_7yuh0")]
+position = Vector2(332, -360)
+scale = Vector2(1, 100)
+
+[node name="BorderBouncy3" parent="." instance=ExtResource("2_7yuh0")]
+position = Vector2(0, -1160)
+scale = Vector2(50, 1)

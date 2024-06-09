@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvq1l1lj4s1tn"]
+
+[ext_resource type="Texture2D" uid="uid://dbienvjrmy682" path="res://Sprites/temp.png" id="1_2gcdl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5dbms"]
+size = Vector2(16, 16)
+
+[node name="BorderBouncy" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5dbms")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_2gcdl")
