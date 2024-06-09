@@ -11,14 +11,16 @@ position = Vector2(0, -10)
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_bottom = 0
 
-[node name="BorderBouncy" parent="." instance=ExtResource("2_7yuh0")]
+[node name="Border" type="Node" parent="."]
+
+[node name="BorderBouncyLeft" parent="Border" instance=ExtResource("2_7yuh0")]
 position = Vector2(-332, -360)
 scale = Vector2(1, 100)
 
-[node name="BorderBouncy2" parent="." instance=ExtResource("2_7yuh0")]
+[node name="BorderBouncyRight" parent="Border" instance=ExtResource("2_7yuh0")]
 position = Vector2(332, -360)
 scale = Vector2(1, 100)
 
-[node name="BorderBouncy3" parent="." instance=ExtResource("2_7yuh0")]
+[node name="BorderBouncyTop" parent="Border" instance=ExtResource("2_7yuh0")]
 position = Vector2(0, -1160)
 scale = Vector2(50, 1)
