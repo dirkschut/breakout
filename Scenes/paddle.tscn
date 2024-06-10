@@ -6,8 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_22h34"]
 size = Vector2(64, 8)
 
-[node name="Paddle" type="CharacterBody2D"]
-motion_mode = 1
+[node name="Paddle" type="StaticBody2D"]
 script = ExtResource("1_xbbpe")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
